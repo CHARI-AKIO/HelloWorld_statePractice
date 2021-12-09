@@ -41,7 +41,7 @@ class HOME_PAGEState extends State<MYHome_Page>{
             // （1） 指定した画面に遷移する
             Navigator.push(context, MaterialPageRoute(
               // （2） 実際に表示するページ(ウィジェット)を指定する
-                builder: (context) => FirstPage()
+                builder: (context) => FirstPage('１ぺーじ')
             ));
           },
         ),

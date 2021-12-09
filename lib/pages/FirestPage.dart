@@ -2,11 +2,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class FirstPage extends StatelessWidget{
+  FirstPage(this.subtitle);
+  String subtitle;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            title : Text('ページ（１）')
+            title : Text(subtitle)
         ),
         body :Center(
           child: TextButton(
