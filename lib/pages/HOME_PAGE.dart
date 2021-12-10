@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 import 'package:helloworld/pages/FirestPage.dart';
@@ -40,7 +42,7 @@ class HOME_PAGEState extends State<MYHome_Page>{
             // （1） 指定した画面に遷移する
             Navigator.push(context, MaterialPageRoute(
               // （2） 実際に表示するページ(ウィジェット)を指定する
-                builder: (context) => FirstPage('１ぺーじ')
+                builder: (context) => FirstPage(),
             ));
           },
         ),
@@ -48,3 +50,5 @@ class HOME_PAGEState extends State<MYHome_Page>{
     );
   }
 }
+
+
