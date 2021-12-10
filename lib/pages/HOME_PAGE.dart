@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:helloworld/pages/FirestPage.dart';
 
 void main() {
-  runApp(HOMEPAGE());
+  runApp(ProviderScope(child: HOMEPAGE()));
 }
 
 class HOMEPAGE extends StatelessWidget{
